@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header><h1>Hangman</h1></header>
+    <div class="container">
+        <div id="input-form">
+            <h3>Enter a word to start the game</h3><br>
+            <form class="form-container">
+                <input type="text" id="enter-word" class="us-input">
+                <button id="start-btn" class="btn">Start game</button>
+            </form>
+        </div>
+        <div id="letter-container" class="letter-container"></div>
+        <div id="user-input-section"></div>
+        <canvas id="canvas" class="frame hide"></canvas>
+        <div id="new-game-container" class="new-game-popup hide">
+          <div id="result-text"></div>
+          <button id="new-game-button">New Game</button>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
